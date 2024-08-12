@@ -1,0 +1,86 @@
+.confirmscreen-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.confirmscreen-container .left-pane {
+  height: 1420px;
+  background: linear-gradient(to bottom, #ffffff, #cccccc);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 45px;
+  text-align: center;
+  color: #000000;
+  padding-top: 0%;
+}
+
+.confirmscreen-container .right-pane {
+  height: 500px;
+  background-color: #000000;
+  font-size: 60px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yourname {
+  margin: 0;
+  background-color: #1428a0;
+  color: white;
+  padding: 30px;
+}
+
+.attendee-info-container {
+  margin-top: 150px; /* Adjust as needed */
+  /* Add other styles as needed */
+}
+
+.attendee-info {
+  font-size: 90px;
+  margin: 40px;
+}
+
+.confirm-button {
+  background-color: #1428a0; /* Example color, choose one that fits your design */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 50px; /* Adjust font size as needed */
+  border-radius: 20px; /* Add rounded corners if desired */
+  cursor: pointer;
+  margin-top: 40px;
+  /* Add other styles as needed */
+}
+
+.loader-container {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

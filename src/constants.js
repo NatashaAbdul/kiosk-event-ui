@@ -1,0 +1,3 @@
+export const ORDER_CLEAR = "ORDER_CLEAR";
+export const NUMBER_SET_TYPE = "NUMBER_SET_TYPE";
+export const ATTENDEE_SET_TYPE = "ATTENDEE_SET_TYPE";

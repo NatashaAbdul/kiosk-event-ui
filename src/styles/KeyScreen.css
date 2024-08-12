@@ -1,0 +1,196 @@
+.keyscreen-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.keyscreen-container img {
+  height: 150px;
+}
+
+.keyscreen-container .left-pane {
+  height: 500px;
+  background: linear-gradient(to bottom, #ffffff, #cccccc);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 45px;
+  text-align: center;
+  color: #c02f1d;
+  padding-top: 0%;
+}
+
+.keyscreen-container .right-pane {
+  height: 500px;
+  background-color: #000000;
+  font-size: 60px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scan-button {
+  background-color: rgb(0, 128, 0);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.bottom-button {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-end; /* Align to the bottom */
+  padding: 20px; /* Optional padding for spacing */
+}
+
+.button-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-height: 1200px; /* Set the maximum height for scrolling */
+  overflow-y: auto; /* Enable vertical scrollbar when content exceeds the height */
+}
+
+.button-list button {
+  width: 70%;
+  padding: 10px;
+  font-size: 35px;
+  font-weight: bold;
+  background: linear-gradient(
+    to bottom,
+    #4caf50,
+    #45a049
+  ); /* Green gradient background */
+  border: none; /* Remove the border */
+  border-radius: 15px;
+  color: #fff; /* Set text color to white */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.right-pane {
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px; /* Adjust the padding as needed */
+  z-index: 1; /* Ensures the text appears on top of the image */
+  font-size: 40px;
+}
+
+.buttonCompany {
+  display: block;
+  margin: 0 auto; /* Center-align the button horizontally */
+  margin-bottom: 10px; /* Set margin-bottom to 20px */
+  padding: 10px;
+  width: 60%;
+  background-color: #004aad;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center; /* Center-align the text within the button */
+  font-size: 40px; /* Increase the font size */
+}
+
+.scrollable-list-company {
+  max-height: 1200px; /* Set the maximum height for scrolling */
+  overflow-y: auto; /* Enable vertical scrollbar when content exceeds the height */
+}
+
+.host {
+  margin: 0;
+  background-color: #1428a0;
+  color: white; /* Add text color to ensure readability on a red background */
+  padding: 30px; /* Add padding for better visual appearance */
+}
+
+.number-input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px; /* Adjust the margin as needed */
+}
+
+.input-circle {
+  width: 150px;
+  height: 150px;
+  background-color: #1428a0;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px; /* Adjust the margin as needed */
+  cursor: pointer;
+  font-size: 100px;
+}
+
+.keypad-pane {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.calculator-keypad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.calculator-row {
+  display: flex;
+}
+
+.calculator-key {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.delete-key {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.enter-key {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 50px;
+}
